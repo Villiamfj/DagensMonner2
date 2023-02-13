@@ -1,0 +1,25 @@
+﻿@namespace DagensMonnerWithEntityFramework.Shared
+
+@using DagensMonnerWithEntityFramework.Models
+
+@inject IMonnerController controller
+
+@if (monner == null)
+{
+    <h2 class="MonnerName"> Loading... </h2>
+}
+else
+{
+    <h2 class="MonnerName" >@monner.Name</h2>
+    <img class"MonnerImg" src=@monner.ImageLink/>
+}
+
+@code {
+    private Monner monner;
+
+    protected override void OnInitialized()
+    {
+        monner = controller.GetMonner();
+        base.OnInitialized();
+    }
+}

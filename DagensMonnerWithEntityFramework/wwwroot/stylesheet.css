@@ -1,0 +1,10 @@
+﻿* {
+    color : LawnGreen;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+img {
+    max-width : 100%;
+}

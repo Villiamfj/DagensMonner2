@@ -1,0 +1,11 @@
+﻿@page 
+
+@using DagensMonnerWithEntityFramework
+@using DagensMonnerWithEntityFramework.Shared
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<link href= "/stylesheet.css" rel="stylesheet" />
+
+<h1> Dagens Monner </h1>
+
+<component type="typeof(MonnerView)" render-mode="ServerPrerendered" />
