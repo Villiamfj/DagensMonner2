@@ -1,5 +1,7 @@
 version: '3'
 
+#ports for both monner-service and monner-db can be removed, these are left in for debuggin purposes.
+
 services:
   monner-service:
     build: ./DagensMonnerWithEntityFramework
@@ -20,4 +22,3 @@ services:
       ACCEPT_EULA: "Y"
     volumes:
     - ./Data:/var/opt/mssql/data
-  
