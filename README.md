@@ -1,5 +1,5 @@
 # DagensMonner2
- A service that serves a daily suggestion of Monster Energy Drink, the idea of such service came from my chrome plugin at https://github.com/Villiamfj/MorgenMonner. The service is made with ASP.NET and uses MSSQL for storage, an instance of this service is currently running on https://dev-villiam.dk/monner.
+ A service that serves a daily suggestion of Monster Energy Drink, the idea of such service came from a chrome plugin at https://github.com/Villiamfj/MorgenMonner. The service is made with ASP.NET and uses MSSQL for storage, an instance of this service is currently running on https://dev-villiam.dk/monner.
 
 ## Requirements
 - Docker
@@ -16,9 +16,9 @@
 1. Fetch all but the last chosen monner from the database
 2. Find the least taken monner(Mmin) and the most taken monner(Mmax)
 3. Calulate limit: `limit = (Mmin.TimesTaken + Mmax.TimesTaken)/2`
-4. Choose a random monner from monners where the times taken are less than or equal to the limit.
+4. Choose a random monner from the fetched monners where the times taken are less than or equal to the limit.
 
-## Things that maybe change
+## Things that may change
 - ConnectionString within an enviroment file
 - A monner calendar? (a definite maybe)
 
